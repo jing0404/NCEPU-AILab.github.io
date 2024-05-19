@@ -3,6 +3,5 @@
   with:
     command: ls -a
     host: ${{ secrets.HOST }}
-    username: garygrossgarten
-    passphrase: ${{ secrets.PASSPHRASE }}
+    username: root
     privateKey: ${{ secrets.PRIVATE_KEY}}
