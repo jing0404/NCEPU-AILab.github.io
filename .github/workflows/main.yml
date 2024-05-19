@@ -8,7 +8,7 @@ jobs:
     - name: pages
       uses: appleboy/ssh-action@v0.1.10
       with:
-        host: ${{ secrets.HOST }}
+        host: 49.232.237.12
         username: root
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
