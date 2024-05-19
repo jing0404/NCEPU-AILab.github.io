@@ -1,0 +1,8 @@
+- name: Deploy pages
+  uses: garygrossgarten/github-action-ssh@0.7.0
+  with:
+    command: ls -a
+    host: ${{ secrets.HOST }}
+    username: garygrossgarten
+    passphrase: ${{ secrets.PASSPHRASE }}
+    privateKey: ${{ secrets.PRIVATE_KEY}}
