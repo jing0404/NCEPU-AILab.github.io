@@ -1,9 +1,11 @@
+on: push
+
 jobs:
-  run_example_job:
+  deploy_pages_to_tencent:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-    - name: print out example job
+    - name: pages
       uses: appleboy/ssh-action@v0.1.10
       with:
         host: ${{ secrets.HOST }}
